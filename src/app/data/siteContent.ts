@@ -1,10 +1,10 @@
-export const HERO_IMG = 'https://images.unsplash.com/photo-1714976694525-71eb29a7c500?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHx0aGVyYXB5JTIwY291bnNlbGluZyUyMHNlc3Npb24lMjBjYWxtfGVufDF8fHx8MTc3OTU4OTI1Mnww&ixlib=rb-4.1.0&q=80&w=1080';
-export const TEAM_1 = 'https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHx0aGVyYXBpc3QlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDF8fHx8MTc3OTQ4ODQzMnww&ixlib=rb-4.1.0&q=80&w=400';
-export const TEAM_2 = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVyYXBpc3QlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDF8fHx8MTc3OTQ4ODQzMnww&ixlib=rb-4.1.0&q=80&w=400';
-export const TEAM_3 = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHx0aGVyYXBpc3QlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDF8fHx8MTc3OTQ4ODQzMnww&ixlib=rb-4.1.0&q=80&w=400';
-export const CARD_1 = 'https://images.unsplash.com/photo-1551847677-dc82d764e1eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVyYXB5JTIwY291bnNlbGluZyUyMHNlc3Npb24lMjBjYWxtfGVufDF8fHx8MTc3OTU4OTI1Mnww&ixlib=rb-4.1.0&q=80&w=600';
-export const CARD_2 = 'https://images.unsplash.com/photo-1461468611824-46457c0e11fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxtZW50YWwlMjBoZWFsdGglMjB3ZWxsbmVzcyUyMG5hdHVyZSUyMHBlYWNlZnVsfGVufDF8fHx8MTc3OTU4OTI1M3ww&ixlib=rb-4.1.0&q=80&w=600';
-export const CARD_3 = 'https://images.unsplash.com/photo-1573495804664-b1c0849525af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHx0aGVyYXB5JTIwY291bnNlbGluZyUyMHNlc3Npb24lMjBjYWxtfGVufDF8fHx8MTc3OTU4OTI1Mnww&ixlib=rb-4.1.0&q=80&w=600';
+export const HERO_IMG = 'https://images.unsplash.com/photo-1668915064380-258413131280?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxwc3ljaG90aGVyYXB5JTIwYmxhY2t8ZW58MHx8MHx8fDA%3D';
+export const TEAM_1 = 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80';
+export const TEAM_2 = 'https://images.unsplash.com/photo-1565884280295-98eb83e41c65?auto=format&fit=crop&w=400&q=80';
+export const TEAM_3 = 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80';
+export const CARD_1 = 'https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&w=600&q=80';
+export const CARD_2 = 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80';
+export const CARD_3 = 'https://images.unsplash.com/photo-1581952976147-5a2d15560349?auto=format&fit=crop&w=600&q=80';
 
 export const mainNavItems = [
   { label: 'Home', to: '/' },
