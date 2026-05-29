@@ -1,7 +1,118 @@
-import { ArrowRight, ChevronRight } from 'lucide-react';
+import { useCallback, useEffect, useState } from 'react';
+import { ArrowLeft, ArrowRight, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '../components/ui/carousel';
 import { SectionEyebrow } from '../components/SectionEyebrow';
 import { services } from '../data/siteContent';
+
+function ServiceCarousel() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+    api.on('select', () => setCurrent(api.selectedScrollSnap()));
+  }, [api]);
+
+  const scrollPrev = useCallback(() => api?.scrollPrev(), [api]);
+  const scrollNext = useCallback(() => api?.scrollNext(), [api]);
+
+  return (
+    <div className="relative">
+      <Carousel
+        setApi={setApi}
+        opts={{ align: 'start', loop: true }}
+        className="w-full"
+      >
+        <CarouselContent className="-ml-5">
+          {services.map((s, index) => (
+            <CarouselItem key={s.title} className="pl-5 basis-[88%] sm:basis-[52%] lg:basis-[34%]">
+              <Link
+                to={`/services/${s.slug}`}
+                className={`group flex flex-col overflow-hidden rounded-[2rem] border transition-all hover:-translate-y-1 hover:shadow-xl h-full ${
+                  index === 1 ? 'border-primary/20 bg-primary text-white' : 'border-stone-200 bg-stone-50'
+                }`}
+              >
+                <div className="relative aspect-[16/10] overflow-hidden flex-shrink-0">
+                  <img
+                    src={s.img}
+                    alt={s.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,0.06)_0%,rgba(17,24,39,0.48)_100%)]" />
+                  <div className="absolute top-4 left-4">
+                    <span className={`rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] ${index === 1 ? 'bg-white text-primary' : 'bg-white/90 text-primary'}`}>
+                      {s.tag}
+                    </span>
+                  </div>
+                </div>
+                <div className="p-7 flex flex-col flex-1">
+                  <h2 className="font-serif text-3xl mb-3">{s.title}</h2>
+                  <p className={`text-sm leading-relaxed mb-5 flex-1 ${index === 1 ? 'text-white/75' : 'text-gray-600'}`}>
+                    {s.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {s.topics.map((t) => (
+                      <span key={t} className={`rounded-full px-3 py-1 text-xs ${index === 1 ? 'border border-white/20 text-white/85' : 'border border-stone-200 bg-white text-gray-600'}`}>
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                  <span className={`inline-flex items-center gap-2 text-sm font-semibold ${index === 1 ? 'text-white' : 'text-primary'}`}>
+                    Learn more & book <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </Link>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+
+      {/* Controls row */}
+      <div className="flex items-center justify-between mt-8">
+        {/* Dot indicators */}
+        <div className="flex items-center gap-2">
+          {Array.from({ length: count }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => api?.scrollTo(i)}
+              type="button"
+              aria-label={`Go to slide ${i + 1}`}
+              className={`rounded-full transition-all duration-300 ${
+                i === current
+                  ? 'w-6 h-2.5 bg-primary'
+                  : 'w-2.5 h-2.5 bg-stone-300 hover:bg-stone-400'
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Prev / Next */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={scrollPrev}
+            type="button"
+            aria-label="Previous"
+            className="w-11 h-11 rounded-full border border-stone-200 bg-white flex items-center justify-center hover:border-primary hover:text-primary transition-colors shadow-sm"
+          >
+            <ArrowLeft className="w-4 h-4" />
+          </button>
+          <button
+            onClick={scrollNext}
+            type="button"
+            aria-label="Next"
+            className="w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary/90 transition-colors shadow-sm"
+          >
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function ServicesPage() {
   return (
@@ -20,7 +131,7 @@ export function ServicesPage() {
                 actually live.
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-                Individual depth work, couples counseling, family therapy, and supported group care, all matched with the pace, format, and clinician that fits best.
+                Individual depth work, couples counseling, family therapy, life coaching, and workshops — all matched with the pace, format, and clinician that fits best.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_rgba(45,95,93,0.22)] hover:bg-primary/90 transition-colors">
@@ -50,7 +161,8 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      {/* Services Carousel */}
+      <section className="bg-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div>
@@ -62,39 +174,11 @@ export function ServicesPage() {
               </h2>
             </div>
             <p className="max-w-md text-gray-600 leading-relaxed">
-              Each service line is matched to your goals, schedule, and the style of care most likely to help.
+              Each service is matched to your goals, schedule, and the style of care most likely to help.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {services.map((s, index) => (
-              <div key={s.title} className={`group overflow-hidden rounded-[2rem] border transition-all hover:-translate-y-1 hover:shadow-xl ${index === 1 ? 'border-primary/20 bg-primary text-white' : 'border-stone-200 bg-stone-50'}`}>
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,0.06)_0%,rgba(17,24,39,0.48)_100%)]" />
-                  <div className="absolute top-4 left-4">
-                    <span className={`rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] ${index === 1 ? 'bg-white text-primary' : 'bg-white/90 text-primary'}`}>
-                      {s.tag}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-7">
-                  <h2 className="font-serif text-3xl mb-3">{s.title}</h2>
-                  <p className={`text-sm leading-relaxed mb-5 ${index === 1 ? 'text-white/75' : 'text-gray-600'}`}>{s.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {s.topics.map((t) => (
-                      <span key={t} className={`rounded-full px-3 py-1 text-xs ${index === 1 ? 'border border-white/20 text-white/85' : 'border border-stone-200 bg-white text-gray-600'}`}>
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                  <Link to="/consultation" className={`inline-flex items-center gap-2 text-sm font-semibold ${index === 1 ? 'text-white' : 'text-primary'}`}>
-                    Ask about this service <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ServiceCarousel />
         </div>
       </section>
 

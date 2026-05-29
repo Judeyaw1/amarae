@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router';
 import { SectionEyebrow } from './SectionEyebrow';
 
-export function ContactSection() {
+export function ContactSection({ preselectedService }: { preselectedService?: string }) {
   return (
     <section className="py-20 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-6">
@@ -11,7 +11,7 @@ export function ContactSection() {
             <SectionEyebrow>Get Started</SectionEyebrow>
             <h2 className="font-serif text-4xl font-semibold text-gray-900 leading-tight mb-5">Ready to Begin?</h2>
             <p className="text-gray-500 leading-relaxed mb-8">
-              The first step is often the hardest. Reach out for a free 20-minute consultation and we will help you figure out the next one.
+              The first step is often the hardest. Reach out for a free 15-minute consultation and we will help you figure out the next one.
             </p>
 
             <div className="space-y-5 mb-8">
@@ -69,7 +69,7 @@ export function ContactSection() {
               </div>
               <div>
                 <label htmlFor="interest" className="block text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1.5">I am interested in</label>
-                <select id="interest" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition">
+                <select id="interest" defaultValue={preselectedService ?? 'Not Sure Yet'} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition">
                   <option>Individual Therapy</option>
                   <option>Couples Counseling</option>
                   <option>Family Therapy</option>

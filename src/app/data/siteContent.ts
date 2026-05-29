@@ -5,6 +5,8 @@ export const TEAM_3 = 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60
 export const CARD_1 = 'https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&w=600&q=80';
 export const CARD_2 = 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80';
 export const CARD_3 = 'https://images.unsplash.com/photo-1581952976147-5a2d15560349?auto=format&fit=crop&w=600&q=80';
+export const CARD_4 = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80';
+export const CARD_5 = 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80';
 
 export const mainNavItems = [
   { label: 'Home', to: '/' },
@@ -16,25 +18,129 @@ export const mainNavItems = [
 
 export const services = [
   {
+    slug: 'individual-therapy',
     tag: 'Individual',
     title: 'Individual Therapy',
     description: 'One-on-one sessions tailored to your unique needs, exploring patterns, building resilience, and creating lasting change.',
     img: CARD_1,
     topics: ['Anxiety & Depression', 'Trauma Recovery', 'Life Transitions', 'Grief & Loss'],
+    fullDescription:
+      'Individual therapy provides a private, confidential space to work through challenges, understand patterns, and build the skills you need to live more fully. Sessions are collaborative — you set the direction, and your therapist brings the tools, curiosity, and steady presence to help you move forward.',
+    whatToExpect: [
+      'An initial consultation to understand your goals and match you with the right clinician',
+      'Weekly or bi-weekly 50-minute sessions at your preferred time and format',
+      'Evidence-based approaches including CBT, EMDR, ACT, and somatic work',
+      'A treatment plan you help shape, reviewed regularly as you progress',
+    ],
+    whoItsFor: [
+      'Adults navigating anxiety, depression, or burnout',
+      'People processing grief, trauma, or major life change',
+      'Anyone seeking deeper self-understanding and personal growth',
+      'Clients who prefer telehealth flexibility or in-person sessions',
+    ],
+    duration: '50-minute sessions',
+    format: 'In-person & Telehealth',
+    modalities: ['CBT', 'EMDR', 'ACT', 'Somatic'],
   },
   {
+    slug: 'couples-counseling',
     tag: 'Couples',
     title: 'Couples Counseling',
     description: 'Strengthen communication, rebuild trust, and rediscover connection with a therapist specialized in relational healing.',
     img: CARD_2,
     topics: ['Communication Skills', 'Conflict Resolution', 'Trust & Intimacy', 'Pre-marital'],
+    fullDescription:
+      'Couples counseling helps partners understand each other more deeply, interrupt unhelpful cycles, and rebuild the secure connection that makes a relationship thrive. Whether you are navigating a specific crisis or simply want to strengthen an already good partnership, our Gottman- and EFT-trained clinicians guide the process with warmth and clarity.',
+    whatToExpect: [
+      'A joint intake and individual sessions to understand each partner\'s perspective',
+      'Weekly 80-minute sessions that balance structured tools with open dialogue',
+      'Frameworks for repairing conflict, improving communication, and rebuilding intimacy',
+      'Clear goals set together so progress is visible and measurable',
+    ],
+    whoItsFor: [
+      'Couples feeling stuck in repetitive conflict or emotional distance',
+      'Partners wanting to deepen connection in a healthy relationship',
+      'Couples preparing for marriage or a major life transition together',
+      'Partners working through infidelity, grief, or a shared crisis',
+    ],
+    duration: '80-minute sessions',
+    format: 'In-person & Telehealth',
+    modalities: ['Gottman Method', 'EFT', 'IFS'],
   },
   {
+    slug: 'family-therapy',
     tag: 'Family',
     title: 'Family Therapy',
     description: 'Navigate family dynamics, heal generational patterns, and build healthier relationships across every stage of life.',
     img: CARD_3,
     topics: ['Parent-Child Relations', 'Blended Families', 'Adolescent Issues', 'Family Conflict'],
+    fullDescription:
+      'Family therapy addresses the system, not just the individual. When one family member is struggling, everyone feels it. Our clinicians work with the whole family unit to identify patterns, improve communication, and build a home environment where each member can grow safely and feel genuinely seen.',
+    whatToExpect: [
+      'A family intake to understand roles, dynamics, and each person\'s goals',
+      'Sessions that include all key members or specific sub-groups as clinically appropriate',
+      'Skill-building for communication, boundaries, and conflict de-escalation',
+      'Individual sessions alongside family sessions when that adds value',
+    ],
+    whoItsFor: [
+      'Families navigating conflict, separation, or blended-family challenges',
+      'Parents and adolescents struggling to connect or communicate',
+      'Families processing a shared loss, illness, or major transition',
+      'Multi-generational households working through inherited patterns',
+    ],
+    duration: '80-minute sessions',
+    format: 'In-person & Telehealth',
+    modalities: ['Structural Family Therapy', 'Narrative', 'DBT Skills'],
+  },
+  {
+    slug: 'life-coaching',
+    tag: 'Coaching',
+    title: 'Life Coaching',
+    description: 'Goal-oriented coaching to help you clarify direction, break through blocks, and build a life that genuinely reflects your values.',
+    img: CARD_4,
+    topics: ['Career Transitions', 'Goal Setting', 'Confidence & Mindset', 'Work-Life Balance'],
+    fullDescription:
+      'Life coaching is focused, future-oriented work. Unlike therapy, which explores past patterns and emotional healing, coaching helps you define what you want, identify what is getting in the way, and build momentum toward it. Sessions are practical, energizing, and structured around your goals.',
+    whatToExpect: [
+      'A goal-setting intake to map where you are and where you want to be',
+      'Weekly or bi-weekly 60-minute sessions by video or phone',
+      'Accountability structures, action steps, and between-session support',
+      'Honest, supportive feedback rather than open-ended exploration',
+    ],
+    whoItsFor: [
+      'Professionals navigating a career pivot, promotion, or burnout',
+      'People who feel stuck despite having the skills and resources to move forward',
+      'Anyone wanting structured accountability to hit a meaningful personal goal',
+      'Clients who prefer a forward-focused approach over clinical therapy',
+    ],
+    duration: '60-minute sessions',
+    format: 'Telehealth & Phone',
+    modalities: ['Solution-Focused', 'Motivational Interviewing', 'Strengths-Based', 'Cognitive Reframing'],
+  },
+  {
+    slug: 'workshops',
+    tag: 'Group',
+    title: 'Workshops & Groups',
+    description: 'Structured group experiences combining psychoeducation, skill-building, and the quiet power of shared human struggle.',
+    img: CARD_5,
+    topics: ['Anxiety Management', 'Emotional Regulation', 'Mindfulness', 'Healthy Relationships'],
+    fullDescription:
+      'Our workshops and ongoing groups bring together people navigating similar challenges in a contained, clinician-led setting. Whether a single-day intensive or a recurring weekly group, these experiences combine learning, practice, and genuine peer connection in ways one-on-one work cannot replicate.',
+    whatToExpect: [
+      'A brief intake to confirm the group is the right fit and timing',
+      'Small groups of 6–10 participants led by a licensed clinician',
+      'Skill-based content you can apply immediately between sessions',
+      'Both time-limited workshops and open-enrollment ongoing groups',
+    ],
+    whoItsFor: [
+      'People who want structured skill-building alongside individual therapy',
+      'Those who find community and shared experience particularly healing',
+      'Clients exploring therapy for the first time who want a gentler entry point',
+      'Anyone seeking targeted support around anxiety, grief, or relationship patterns',
+    ],
+    duration: '90-minute sessions',
+    format: 'In-person & Online',
+    modalities: ['DBT Skills', 'Mindfulness-Based', 'Psychoeducation', 'Group Process'],
   },
 ];
 

@@ -6,6 +6,7 @@ import { ApproachPage } from './pages/ApproachPage';
 import { ConsultationPage } from './pages/ConsultationPage';
 import { HomePage } from './pages/HomePage';
 import { ResourcesPage } from './pages/ResourcesPage';
+import { ServiceDetailPage } from './pages/ServiceDetailPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { TeamPage } from './pages/TeamPage';
 
@@ -40,6 +41,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/:slug" element={<ServiceDetailPage />} />
           <Route path="/approach" element={<ApproachPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
