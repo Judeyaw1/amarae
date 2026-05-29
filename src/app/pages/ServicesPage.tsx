@@ -66,7 +66,7 @@ export function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {services.map((s, index) => (
               <div key={s.title} className={`group overflow-hidden rounded-[2rem] border transition-all hover:-translate-y-1 hover:shadow-xl ${index === 1 ? 'border-primary/20 bg-primary text-white' : 'border-stone-200 bg-stone-50'}`}>
                 <div className="relative aspect-[16/10] overflow-hidden">

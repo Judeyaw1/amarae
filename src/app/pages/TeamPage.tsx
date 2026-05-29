@@ -45,7 +45,7 @@ export function TeamPage() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {therapists.map((t, index) => (
               <div key={t.name} className={`group rounded-[2rem] overflow-hidden ${index === 1 ? 'bg-primary text-white' : 'bg-stone-50 border border-stone-200'}`}>
                 <div className="aspect-[3/4] overflow-hidden">

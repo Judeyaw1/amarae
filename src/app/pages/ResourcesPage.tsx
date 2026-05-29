@@ -51,7 +51,7 @@ export function ResourcesPage() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {articles.map((a, index) => (
               <article key={a.title} className={`group rounded-[2rem] overflow-hidden border transition-all hover:-translate-y-1 hover:shadow-lg ${index === 2 ? 'border-gray-900 bg-gray-900 text-white' : 'border-stone-200 bg-white'}`}>
                 <div className="aspect-[16/10] overflow-hidden">

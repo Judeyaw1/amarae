@@ -33,12 +33,12 @@ export function ApproachPage() {
               </div>
             </div>
 
-            <div className="relative min-h-[540px]">
+            <div className="relative min-h-[300px] sm:min-h-[420px] lg:min-h-[540px]">
               <div className="absolute inset-0 rounded-[2.5rem] bg-white/5" />
               <div className="absolute inset-4 overflow-hidden rounded-[2rem]">
                 <img src={CARD_2} alt="Therapeutic approach" className="w-full h-full object-cover" />
               </div>
-              <div className="absolute -bottom-2 left-0 rounded-[1.75rem] bg-amber-300 text-gray-950 p-6 max-w-[250px] shadow-xl">
+              <div className="hidden lg:block absolute -bottom-2 left-0 rounded-[1.75rem] bg-amber-300 text-gray-950 p-6 max-w-[250px] shadow-xl">
                 <div className="font-serif text-3xl font-semibold mb-2">15+</div>
                 <div className="text-sm text-gray-800/80">Licensed clinicians across specialties and treatment styles</div>
               </div>
@@ -89,7 +89,7 @@ export function ApproachPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {carePath.map((item) => (
               <div key={item.step} className="rounded-[1.75rem] bg-white border border-stone-200 p-6 shadow-sm">
                 <div className="text-[11px] uppercase tracking-[0.2em] text-primary font-semibold mb-4">{item.step}</div>

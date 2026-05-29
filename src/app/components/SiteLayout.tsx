@@ -111,7 +111,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
       <footer className="bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-6 py-14">
-          <div className="grid md:grid-cols-4 gap-10 mb-10">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-7 h-7 bg-primary rounded-sm flex items-center justify-center flex-shrink-0">

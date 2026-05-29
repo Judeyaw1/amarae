@@ -22,7 +22,7 @@ export function AboutPage() {
       </section>
 
       <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
               title: 'Our mission',
@@ -68,7 +68,7 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionEyebrow>Meet the founder</SectionEyebrow>
           <div className="grid lg:grid-cols-[auto_1fr] gap-12 items-start mt-8">
-            <div className="rounded-[2rem] overflow-hidden shadow-sm w-64 flex-shrink-0">
+            <div className="rounded-[2rem] overflow-hidden shadow-sm w-48 sm:w-64 flex-shrink-0 mx-auto lg:mx-0">
               <img src={TEAM_1} alt="Founder" className="w-full h-full object-cover aspect-[3/4]" />
             </div>
             <div className="flex flex-col justify-center">
