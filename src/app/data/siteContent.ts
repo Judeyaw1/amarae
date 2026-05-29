@@ -7,6 +7,7 @@ export const CARD_2 = 'https://images.unsplash.com/photo-1461468611824-46457c0e1
 export const CARD_3 = 'https://images.unsplash.com/photo-1573495804664-b1c0849525af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHx0aGVyYXB5JTIwY291bnNlbGluZyUyMHNlc3Npb24lMjBjYWxtfGVufDF8fHx8MTc3OTU4OTI1Mnww&ixlib=rb-4.1.0&q=80&w=600';
 
 export const mainNavItems = [
+  { label: 'Home', to: '/' },
   { label: 'Services', to: '/services' },
   { label: 'Our Approach', to: '/approach' },
   { label: 'Resources', to: '/resources' },
