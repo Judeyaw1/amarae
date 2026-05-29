@@ -148,7 +148,7 @@ export function ServicesPage() {
               {[
                 { label: 'Session formats', value: '1:1, couples, family, groups' },
                 { label: 'Availability', value: 'Daytime, evenings, Saturday' },
-                { label: 'Access', value: 'In-person and telehealth' },
+                { label: 'Access', value: 'telehealth' },
                 { label: 'Support', value: 'Consultation before you commit' },
               ].map((item) => (
                 <div key={item.label} className="rounded-[1.75rem] border border-white/70 bg-white/80 p-6 shadow-sm backdrop-blur-sm">
