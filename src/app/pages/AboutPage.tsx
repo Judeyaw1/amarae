@@ -1,5 +1,5 @@
 import { SectionEyebrow } from '../components/SectionEyebrow';
-import { HERO_IMG } from '../data/siteContent';
+import { HERO_IMG, TEAM_1 } from '../data/siteContent';
 
 export function AboutPage() {
   return (
@@ -60,6 +60,39 @@ export function AboutPage() {
           </div>
           <div className="rounded-[2.5rem] overflow-hidden shadow-sm">
             <img src={HERO_IMG} alt="About Serenity Behavioral Health" className="w-full h-full object-cover aspect-[16/11]" />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionEyebrow>Meet the founder</SectionEyebrow>
+          <div className="grid lg:grid-cols-[auto_1fr] gap-12 items-start mt-8">
+            <div className="rounded-[2rem] overflow-hidden shadow-sm w-64 flex-shrink-0">
+              <img src={TEAM_1} alt="Founder" className="w-full h-full object-cover aspect-[3/4]" />
+            </div>
+            <div className="flex flex-col justify-center">
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gray-900 leading-[1.02] mb-2">
+                Dr. [Founder Name]
+              </h2>
+              <p className="text-primary font-semibold mb-6">[Credentials, e.g. PhD, LCSW]</p>
+              <div className="space-y-4 text-gray-600 leading-relaxed max-w-2xl">
+                <p>
+                  [A brief personal bio about the founder — their background, what drew them to psychotherapy, and the values that shaped this practice.]
+                </p>
+                <p>
+                  [A second paragraph about their clinical experience, training, or specific areas of expertise.]
+                </p>
+                <p>
+                  [Optional: a personal note about why they founded this practice and their vision for client care.]
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3 mt-8">
+                {['[Specialty 1]', '[Specialty 2]', '[Specialty 3]'].map((tag) => (
+                  <span key={tag} className="text-xs font-medium px-3 py-1.5 rounded-full border border-stone-200 bg-stone-50 text-gray-600">{tag}</span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

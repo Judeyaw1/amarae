@@ -9,7 +9,6 @@ export const CARD_3 = 'https://images.unsplash.com/photo-1573495804664-b1c084952
 export const mainNavItems = [
   { label: 'Services', to: '/services' },
   { label: 'Our Approach', to: '/approach' },
-  { label: 'Our Team', to: '/team' },
   { label: 'Resources', to: '/resources' },
   { label: 'About', to: '/about' },
 ];
