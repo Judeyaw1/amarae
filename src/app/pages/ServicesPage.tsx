@@ -33,7 +33,7 @@ function ServiceCarousel() {
               <Link
                 to={`/services/${s.slug}`}
                 className={`group flex flex-col overflow-hidden rounded-[2rem] border transition-all hover:-translate-y-1 hover:shadow-xl h-full ${
-                  index === 1 ? 'border-primary/20 bg-primary text-white' : 'border-stone-200 bg-stone-50'
+                  index === 3 ? 'border-primary/20 bg-primary text-white' : 'border-stone-200 bg-stone-50'
                 }`}
               >
                 <div className="relative aspect-[16/10] overflow-hidden flex-shrink-0">
@@ -44,24 +44,24 @@ function ServiceCarousel() {
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,0.06)_0%,rgba(17,24,39,0.48)_100%)]" />
                   <div className="absolute top-4 left-4">
-                    <span className={`rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] ${index === 1 ? 'bg-white text-primary' : 'bg-white/90 text-primary'}`}>
+                    <span className={`rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] ${index === 3 ? 'bg-white text-primary' : 'bg-white/90 text-primary'}`}>
                       {s.tag}
                     </span>
                   </div>
                 </div>
                 <div className="p-7 flex flex-col flex-1">
                   <h2 className="font-serif text-3xl mb-3">{s.title}</h2>
-                  <p className={`text-sm leading-relaxed mb-5 flex-1 ${index === 1 ? 'text-white/75' : 'text-gray-600'}`}>
+                  <p className={`text-sm leading-relaxed mb-5 flex-1 ${index === 3 ? 'text-white/75' : 'text-gray-600'}`}>
                     {s.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {s.topics.map((t) => (
-                      <span key={t} className={`rounded-full px-3 py-1 text-xs ${index === 1 ? 'border border-white/20 text-white/85' : 'border border-stone-200 bg-white text-gray-600'}`}>
+                      <span key={t} className={`rounded-full px-3 py-1 text-xs ${index === 3 ? 'border border-white/20 text-white/85' : 'border border-stone-200 bg-white text-gray-600'}`}>
                         {t}
                       </span>
                     ))}
                   </div>
-                  <span className={`inline-flex items-center gap-2 text-sm font-semibold ${index === 1 ? 'text-white' : 'text-primary'}`}>
+                  <span className={`inline-flex items-center gap-2 text-sm font-semibold ${index === 3 ? 'text-white' : 'text-primary'}`}>
                     Learn more & book <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
