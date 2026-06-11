@@ -25,7 +25,7 @@ export const services = [
     img: CARD_1,
     topics: ['Anxiety & Depression', 'Trauma Recovery', 'Life Transitions', 'Grief & Loss'],
     fullDescription:
-      'Individual therapy provides a private, confidential space to work through challenges, understand patterns, and build the skills you need to live more fully. Sessions are collaborative — you set the direction, and your therapist brings the tools, curiosity, and steady presence to help you move forward.',
+      'Individual therapy provides a confidential and collaborative space to explore personal challenges, increase self-awareness, and develop healthier ways of coping and relating. Treatment may focus on concerns such as mood disorders, anxiety disorders, stress, trauma, self-esteem, and personal growth. Together, we work toward meaningful change using evidence-based and client-centered approaches tailored to your goals. For clients who desire it, faith and spirituality may also be thoughtfully integrated into the therapeutic process as a source of support, healing, meaning, and personal growth while honoring each individual\'s values and beliefs.',
     whatToExpect: [
       'An initial consultation to understand your goals and match you with the right clinician',
       'Weekly or bi-weekly 50-minute sessions at your preferred time and format',
