@@ -75,7 +75,7 @@ export function AboutPage() {
               <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gray-900 leading-[1.02] mb-2">
                 R.A.Kwadu
               </h2>
-              <p className="text-primary font-semibold mb-6">MS, NCC, LCPC Therapist</p>
+              <p className="text-primary font-semibold mb-6">MS, NCC, LCPC</p>
               <div className="space-y-4 text-gray-600 leading-relaxed max-w-2xl">
                 <p>
                   Ama is a compassionate and culturally responsive therapist dedicated to helping individuals navigate life's challenges and achieve meaningful, sustainable growth. With years of experience in the mental health field, she has worked across university counseling, residential treatment, and private practice settings, providing care to individuals from diverse backgrounds, cultures, and stages of life. Her experience ranges from supporting college students and young adults through life transitions to working with individuals experiencing severe and persistent mental illness, as well as high-functioning children to professionals managing anxiety, depression, trauma, relationship concerns, and stress.
