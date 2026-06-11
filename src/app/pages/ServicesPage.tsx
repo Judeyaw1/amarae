@@ -146,9 +146,9 @@ export function ServicesPage() {
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { label: 'Session formats', value: '1:1, couples, family, groups' },
-                { label: 'Availability', value: 'Daytime, evenings, Saturday' },
-                { label: 'Access', value: 'telehealth' },
+                { label: 'Session formats', value: 'Individual, family & groups' },
+                { label: 'Availability', value: 'Daytime & evenings on weekdays' },
+                { label: 'Access', value: 'HIPAA compliance telehealth' },
                 { label: 'Support', value: 'Consultation before you commit' },
               ].map((item) => (
                 <div key={item.label} className="rounded-[1.75rem] border border-white/70 bg-white/80 p-6 shadow-sm backdrop-blur-sm">
