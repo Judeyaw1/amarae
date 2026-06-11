@@ -5,6 +5,7 @@ import { AboutPage } from './pages/AboutPage';
 import { ApproachPage } from './pages/ApproachPage';
 import { ConsultationPage } from './pages/ConsultationPage';
 import { HomePage } from './pages/HomePage';
+import { RatesPage } from './pages/RatesPage';
 import { ResourcesPage } from './pages/ResourcesPage';
 import { ServiceDetailPage } from './pages/ServiceDetailPage';
 import { ServicesPage } from './pages/ServicesPage';
@@ -45,6 +46,7 @@ export default function App() {
           <Route path="/approach" element={<ApproachPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/rates" element={<RatesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/consultation" element={<ConsultationPage />} />
         </Routes>
