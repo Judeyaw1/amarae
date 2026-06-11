@@ -33,7 +33,7 @@ export function NewsletterSignup({ variant = 'section' }: { variant?: 'section' 
             />
             <button
               type="submit"
-              className="flex-shrink-0 rounded-md bg-primary px-3 py-2 text-foreground hover:bg-primary/90 transition-colors"
+              className="flex-shrink-0 rounded-md bg-accent px-3 py-2 text-accent-foreground hover:bg-accent/90 transition-colors"
               aria-label="Subscribe"
             >
               <Send className="w-4 h-4" />
@@ -76,7 +76,7 @@ export function NewsletterSignup({ variant = 'section' }: { variant?: 'section' 
                 />
                 <button
                   type="submit"
-                  className="flex-shrink-0 bg-gray-900 hover:bg-gray-800 text-white text-sm font-semibold px-6 py-3 rounded-md transition-colors"
+                  className="flex-shrink-0 bg-accent hover:bg-accent/90 text-accent-foreground text-sm font-semibold px-6 py-3 rounded-md transition-colors"
                 >
                   Subscribe
                 </button>

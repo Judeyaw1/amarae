@@ -104,7 +104,7 @@ function ServiceCarousel() {
             onClick={scrollNext}
             type="button"
             aria-label="Next"
-            className="w-11 h-11 rounded-full bg-primary text-foreground flex items-center justify-center hover:bg-primary/90 transition-colors shadow-sm"
+            className="w-11 h-11 rounded-full bg-accent text-accent-foreground flex items-center justify-center hover:bg-accent/90 transition-colors shadow-sm"
           >
             <ArrowRight className="w-4 h-4" />
           </button>
@@ -134,7 +134,7 @@ export function ServicesPage() {
                 Individual depth work, couples counseling, family therapy, life coaching, and workshops — all matched with the pace, format, and clinician that fits best.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_18px_50px_rgba(199,210,191,0.22)] hover:bg-primary/90 transition-colors">
+                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_18px_50px_rgba(161,201,231,0.35)] hover:bg-accent/90 transition-colors">
                   Find Your Fit
                   <ArrowRight className="w-4 h-4" />
                 </Link>
