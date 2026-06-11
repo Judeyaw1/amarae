@@ -23,7 +23,7 @@ const practicePages = [
   {
     kicker: 'Understand the practice',
     title: 'About',
-    description: 'Learn how Serenity works, what it values, and what clients can expect from the process.',
+    description: 'Learn how ARK Counseling Connection works, what it values, and what clients can expect from the process.',
     to: '/about',
     tone: 'light',
   },
@@ -56,7 +56,7 @@ export function HomePage() {
               </h1>
 
               <p className="max-w-xl text-lg sm:text-xl text-gray-600 leading-relaxed mb-8">
-                Serenity Behavioral Health combines evidence-based psychotherapy with a more thoughtful digital experience, so people can understand the practice before they ever book a session.
+                ARK Counseling Connection combines evidence-based psychotherapy with a more thoughtful digital experience, so people can understand the practice before they ever book a session.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-10">

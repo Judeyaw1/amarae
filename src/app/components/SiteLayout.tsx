@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { ChevronDown, Mail, MapPin, Menu, Phone, Search, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router';
 import { mainNavItems, services } from '../data/siteContent';
+import ARK_LOGO from '../../assets/ark-logo.png';
 import { NewsletterSignup } from './NewsletterSignup';
 
 function HeaderLink({ to, label }: { to: string; label: string }) {
@@ -99,13 +100,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center flex-shrink-0">
-                <div className="w-4 h-4 border-2 border-white rounded-full" />
-              </div>
-              <div className="leading-none">
-                <div className="font-serif font-semibold text-[15px] text-foreground">Serenity</div>
-                <div className="text-[10px] uppercase tracking-widest text-muted-foreground font-medium">Behavioral Health</div>
-              </div>
+              <img src={ARK_LOGO} alt="ARK Counseling Connection" className="h-9 w-auto flex-shrink-0" />
             </Link>
 
             <nav className="hidden md:flex items-center gap-1">
@@ -174,10 +169,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10 mb-10">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-7 h-7 bg-primary rounded-sm flex items-center justify-center flex-shrink-0">
-                  <div className="w-3.5 h-3.5 border-2 border-white rounded-full" />
-                </div>
-                <span className="font-serif font-semibold text-lg">Serenity Behavioral Health</span>
+                <img src={ARK_LOGO} alt="ARK Counseling Connection" className="h-9 w-auto rounded bg-white p-1 flex-shrink-0" />
+                <span className="font-serif font-semibold text-lg">ARK Counseling Connection</span>
               </div>
               <p className="text-sm text-gray-400 leading-relaxed mb-4 max-w-sm">
                 Compassionate, evidence-based psychotherapy in Maryland. We help individuals, couples, and families build lives of greater meaning and ease.
@@ -213,7 +206,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </div>
 
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-gray-600">© {new Date().getFullYear()} Serenity Behavioral Health. All rights reserved.</p>
+            <p className="text-xs text-gray-600">© {new Date().getFullYear()} ARK Counseling Connection. All rights reserved.</p>
             <div className="text-xs text-gray-500 text-center md:text-right max-w-md">
               <span className="font-semibold text-amber-400">Crisis Line:</span> If you are in crisis, call or text{' '}
               <a href="tel:988" className="underline hover:text-white">988</a> or go to your nearest emergency room.

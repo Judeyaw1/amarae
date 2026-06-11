@@ -17,7 +17,7 @@ export function NewsletterSignup({ variant = 'section' }: { variant?: 'section' 
       <div>
         <h4 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">Stay Updated</h4>
         <p className="text-sm text-gray-400 mb-4 leading-relaxed">
-          Get occasional news, offers, and resources from Serenity Behavioral Health.
+          Get occasional news, offers, and resources from ARK Counseling Connection.
         </p>
         {submitted ? (
           <p className="text-sm text-primary">Thanks for subscribing!</p>

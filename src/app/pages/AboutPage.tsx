@@ -16,7 +16,7 @@ export function AboutPage() {
             clear, and personal.
           </h1>
           <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
-            Serenity Behavioral Health combines clinical depth with a more welcoming client experience from first consultation through long-term care.
+            ARK Counseling Connection combines clinical depth with a more welcoming client experience from first consultation through long-term care.
           </p>
         </div>
       </section>
@@ -59,7 +59,7 @@ export function AboutPage() {
             </p>
           </div>
           <div className="rounded-[2.5rem] overflow-hidden shadow-sm">
-            <img src={HERO_IMG} alt="About Serenity Behavioral Health" className="w-full h-full object-cover aspect-[16/11]" />
+            <img src={HERO_IMG} alt="About ARK Counseling Connection" className="w-full h-full object-cover aspect-[16/11]" />
           </div>
         </div>
       </section>
