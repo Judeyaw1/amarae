@@ -47,6 +47,9 @@ export function ServiceDetailPage() {
                   Our Approach
                 </Link>
               </div>
+              {service.pricingNote && (
+                <p className="text-sm text-gray-500 leading-relaxed mt-4 max-w-xl">{service.pricingNote}</p>
+              )}
             </div>
 
             <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-xl">

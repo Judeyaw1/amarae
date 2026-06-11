@@ -72,6 +72,7 @@ export function ContactSection({ preselectedService }: { preselectedService?: st
                 <select id="interest" defaultValue={preselectedService ?? 'Not Sure Yet'} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition">
                   <option>Individual Therapy</option>
                   <option>Couples Counseling</option>
+                  <option>Family Therapy</option>
                   <option>Relational Therapy</option>
                   <option>Group Sessions</option>
                   <option>Not Sure Yet</option>

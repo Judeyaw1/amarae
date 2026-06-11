@@ -68,14 +68,14 @@ export const services = [
     modalities: ['Gottman Method', 'EFT', 'IFS'],
   },
   {
-    slug: 'relational-therapy',
-    tag: 'Relational',
-    title: 'Relational Therapy',
+    slug: 'family-therapy',
+    tag: 'Family',
+    title: 'Family Therapy',
     description: 'Navigate family dynamics, heal generational patterns, and build healthier relationships across every stage of life.',
     img: CARD_3,
     topics: ['Parent-Child Relations', 'Blended Families', 'Adolescent Issues', 'Family Conflict'],
     fullDescription:
-      'Relational therapy addresses the system, not just the individual. When one family member is struggling, everyone feels it. Our clinicians work with the whole family unit to identify patterns, improve communication, and build a home environment where each member can grow safely and feel genuinely seen.',
+      'Family therapy supports families in improving communication, strengthening relationships, and navigating challenges together. Sessions focus on understanding patterns within the family system, addressing conflict, increasing connection, and developing healthier ways of interacting. Family therapy may be helpful during periods of transition, behavioral concerns, parenting challenges, or ongoing relational stress.',
     whatToExpect: [
       'A family intake to understand roles, dynamics, and each person\'s goals',
       'Sessions that include all key members or specific sub-groups as clinically appropriate',
@@ -91,6 +91,32 @@ export const services = [
     duration: '80-minute sessions',
     format: 'In-person & Telehealth',
     modalities: ['Structural Family Therapy', 'Narrative', 'DBT Skills'],
+  },
+  {
+    slug: 'relational-therapy',
+    tag: 'Relational',
+    title: 'Relational Therapy',
+    description: 'Structured sessions for friends, co-parents, siblings, and other non-romantic relationships seeking healthier communication and connection.',
+    img: CARD_2,
+    topics: ['Communication', 'Boundaries', 'Conflict Resolution', 'Co-Parenting'],
+    fullDescription:
+      'Interpersonal therapy provides a structured therapeutic space for two or more individuals to improve communication, strengthen understanding, and work through relational challenges in a supportive environment. This service may include friends, colleagues, adult family members, co-parents, siblings, or other non-romantic relationships seeking healthier interaction and connection. Sessions focus on communication, boundaries, conflict resolution, and strengthening interpersonal functioning.',
+    whatToExpect: [
+      'A consultation to understand the relationship and each participant\'s goals',
+      'Sessions that include two or more participants in a supportive, structured format',
+      'Focused work on communication, boundaries, and conflict resolution',
+      'Strategies for strengthening interpersonal functioning going forward',
+    ],
+    whoItsFor: [
+      'Friends or colleagues working through ongoing tension or miscommunication',
+      'Co-parents wanting to communicate more effectively for their children',
+      'Adult siblings or family members navigating long-standing conflict',
+      'Anyone in a non-romantic relationship seeking healthier interaction',
+    ],
+    duration: '60-minute sessions',
+    format: 'In-person & Telehealth',
+    modalities: ['Communication Skills', 'Conflict Resolution', 'Boundary Setting'],
+    pricingNote: 'Insurance is not accepted for this service. Private pay only: starting at $250 per session.',
   },
   {
     slug: 'life-coaching',
