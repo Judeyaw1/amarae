@@ -46,11 +46,6 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-6 py-14 lg:py-20">
           <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-3 rounded-full border border-primary/15 bg-white/80 px-4 py-2 backdrop-blur-sm mb-7">
-                <div className="w-2 h-2 rounded-full bg-primary" />
-                <span className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Maryland psychotherapy studio</span>
-              </div>
-
               <h1 className="font-serif text-[3.2rem] sm:text-[4.35rem] lg:text-[5.4rem] font-semibold text-gray-900 leading-[0.95] tracking-[-0.03em] mb-6">
                 A calmer
                 <br />
