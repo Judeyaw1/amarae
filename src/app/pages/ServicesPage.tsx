@@ -134,7 +134,7 @@ export function ServicesPage() {
                 Individual depth work, couples counseling, family therapy, life coaching, and workshops — all matched with the pace, format, and clinician that fits best.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_rgba(45,95,93,0.22)] hover:bg-primary/90 transition-colors">
+                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_rgba(91,143,184,0.22)] hover:bg-primary/90 transition-colors">
                   Find Your Fit
                   <ArrowRight className="w-4 h-4" />
                 </Link>
