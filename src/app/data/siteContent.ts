@@ -68,14 +68,14 @@ export const services = [
     modalities: ['Gottman Method', 'EFT', 'IFS'],
   },
   {
-    slug: 'family-therapy',
-    tag: 'Family',
-    title: 'Family Therapy',
+    slug: 'relational-therapy',
+    tag: 'Relational',
+    title: 'Relational Therapy',
     description: 'Navigate family dynamics, heal generational patterns, and build healthier relationships across every stage of life.',
     img: CARD_3,
     topics: ['Parent-Child Relations', 'Blended Families', 'Adolescent Issues', 'Family Conflict'],
     fullDescription:
-      'Family therapy addresses the system, not just the individual. When one family member is struggling, everyone feels it. Our clinicians work with the whole family unit to identify patterns, improve communication, and build a home environment where each member can grow safely and feel genuinely seen.',
+      'Relational therapy addresses the system, not just the individual. When one family member is struggling, everyone feels it. Our clinicians work with the whole family unit to identify patterns, improve communication, and build a home environment where each member can grow safely and feel genuinely seen.',
     whatToExpect: [
       'A family intake to understand roles, dynamics, and each person\'s goals',
       'Sessions that include all key members or specific sub-groups as clinically appropriate',
