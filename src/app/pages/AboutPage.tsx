@@ -73,22 +73,22 @@ export function AboutPage() {
             </div>
             <div className="flex flex-col justify-center">
               <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gray-900 leading-[1.02] mb-2">
-                Dr. [Founder Name]
+                Ama
               </h2>
-              <p className="text-primary font-semibold mb-6">[Credentials, e.g. PhD, LCSW]</p>
+              <p className="text-primary font-semibold mb-6">EMDR-Trained Therapist</p>
               <div className="space-y-4 text-gray-600 leading-relaxed max-w-2xl">
                 <p>
-                  [A brief personal bio about the founder — their background, what drew them to psychotherapy, and the values that shaped this practice.]
+                  Ama is a compassionate and culturally responsive therapist dedicated to helping individuals navigate life's challenges and achieve meaningful, sustainable growth. With years of experience in the mental health field, she has worked across university counseling, residential treatment, and private practice settings, providing care to individuals from diverse backgrounds, cultures, and stages of life. Her experience ranges from supporting college students and young adults through life transitions to working with individuals experiencing severe and persistent mental illness, as well as high-functioning children to professionals managing anxiety, depression, trauma, relationship concerns, and stress.
                 </p>
                 <p>
-                  [A second paragraph about their clinical experience, training, or specific areas of expertise.]
+                  Ama believes that effective therapy begins with understanding the unique experiences and needs of each person. She takes a person-centered approach and recognizes that no single therapeutic method works for everyone. To best support her clients, she integrates evidence-based approaches including Eye Movement Desensitization and Reprocessing (EMDR), Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and Acceptance and Commitment Therapy (ACT). As an EMDR-trained therapist, she helps clients process difficult experiences, develop healthier coping strategies, and build emotional resilience.
                 </p>
                 <p>
-                  [Optional: a personal note about why they founded this practice and their vision for client care.]
+                  Ama's goal is to create a warm, supportive, and nonjudgmental space where clients feel heard, understood, and empowered. She works collaboratively with individuals to address concerns such as anxiety, depression, trauma, attachment wounds, relationship challenges, self-esteem, and life transitions. Through therapy, clients gain practical tools, deeper self-awareness, and the confidence to move toward a more balanced, fulfilling life.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 mt-8">
-                {['[Specialty 1]', '[Specialty 2]', '[Specialty 3]'].map((tag) => (
+                {['EMDR', 'CBT', 'DBT', 'ACT', 'Trauma', 'Anxiety & Depression'].map((tag) => (
                   <span key={tag} className="text-xs font-medium px-3 py-1.5 rounded-full border border-stone-200 bg-stone-50 text-gray-600">{tag}</span>
                 ))}
               </div>
