@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, ChevronDown, ChevronRight, Star } from 'lucide-react';
 import { Link } from 'react-router';
+import { NewsletterSignup } from '../components/NewsletterSignup';
 import { SectionEyebrow } from '../components/SectionEyebrow';
 import { HERO_IMG, faqs, stats, testimonials } from '../data/siteContent';
 
@@ -300,6 +301,8 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
+      <NewsletterSignup />
     </>
   );
 }

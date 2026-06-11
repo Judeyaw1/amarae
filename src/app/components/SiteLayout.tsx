@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { ChevronDown, Mail, MapPin, Menu, Phone, Search, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router';
 import { mainNavItems, services } from '../data/siteContent';
+import { NewsletterSignup } from './NewsletterSignup';
 
 function HeaderLink({ to, label }: { to: string; label: string }) {
   return (
@@ -170,7 +171,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
       <footer className="bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-6 py-14">
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+          <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10 mb-10">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-7 h-7 bg-primary rounded-sm flex items-center justify-center flex-shrink-0">
@@ -207,6 +208,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                 ))}
               </ul>
             </div>
+
+            <NewsletterSignup variant="footer" />
           </div>
 
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
