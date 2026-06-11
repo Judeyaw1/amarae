@@ -43,31 +43,6 @@ export const services = [
     modalities: ['CBT', 'EMDR', 'ACT', 'Somatic'],
   },
   {
-    slug: 'couples-counseling',
-    tag: 'Couples',
-    title: 'Couples Counseling',
-    description: 'Strengthen communication, rebuild trust, and rediscover connection with a therapist specialized in relational healing.',
-    img: CARD_2,
-    topics: ['Communication Skills', 'Conflict Resolution', 'Trust & Intimacy', 'Pre-marital'],
-    fullDescription:
-      'Couples counseling helps partners understand each other more deeply, interrupt unhelpful cycles, and rebuild the secure connection that makes a relationship thrive. Whether you are navigating a specific crisis or simply want to strengthen an already good partnership, our Gottman- and EFT-trained clinicians guide the process with warmth and clarity.',
-    whatToExpect: [
-      'A joint intake and individual sessions to understand each partner\'s perspective',
-      'Weekly 80-minute sessions that balance structured tools with open dialogue',
-      'Frameworks for repairing conflict, improving communication, and rebuilding intimacy',
-      'Clear goals set together so progress is visible and measurable',
-    ],
-    whoItsFor: [
-      'Couples feeling stuck in repetitive conflict or emotional distance',
-      'Partners wanting to deepen connection in a healthy relationship',
-      'Couples preparing for marriage or a major life transition together',
-      'Partners working through infidelity, grief, or a shared crisis',
-    ],
-    duration: '80-minute sessions',
-    format: 'In-person & Telehealth',
-    modalities: ['Gottman Method', 'EFT', 'IFS'],
-  },
-  {
     slug: 'family-therapy',
     tag: 'Family',
     title: 'Family Therapy',
@@ -91,6 +66,31 @@ export const services = [
     duration: '80-minute sessions',
     format: 'In-person & Telehealth',
     modalities: ['Structural Family Therapy', 'Narrative', 'DBT Skills'],
+  },
+  {
+    slug: 'couples-counseling',
+    tag: 'Couples',
+    title: 'Couples Counseling',
+    description: 'Strengthen communication, rebuild trust, and rediscover connection with a therapist specialized in relational healing.',
+    img: CARD_2,
+    topics: ['Communication Skills', 'Conflict Resolution', 'Trust & Intimacy', 'Pre-marital'],
+    fullDescription:
+      'Couples counseling helps partners understand each other more deeply, interrupt unhelpful cycles, and rebuild the secure connection that makes a relationship thrive. Whether you are navigating a specific crisis or simply want to strengthen an already good partnership, our Gottman- and EFT-trained clinicians guide the process with warmth and clarity.',
+    whatToExpect: [
+      'A joint intake and individual sessions to understand each partner\'s perspective',
+      'Weekly 80-minute sessions that balance structured tools with open dialogue',
+      'Frameworks for repairing conflict, improving communication, and rebuilding intimacy',
+      'Clear goals set together so progress is visible and measurable',
+    ],
+    whoItsFor: [
+      'Couples feeling stuck in repetitive conflict or emotional distance',
+      'Partners wanting to deepen connection in a healthy relationship',
+      'Couples preparing for marriage or a major life transition together',
+      'Partners working through infidelity, grief, or a shared crisis',
+    ],
+    duration: '80-minute sessions',
+    format: 'In-person & Telehealth',
+    modalities: ['Gottman Method', 'EFT', 'IFS'],
   },
   {
     slug: 'relational-therapy',
