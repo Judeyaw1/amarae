@@ -39,7 +39,7 @@ export function ServiceDetailPage() {
                 {service.fullDescription}
               </p>
               <div className="flex flex-wrap gap-3">
-                <a href="#book" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_rgba(91,143,184,0.22)] hover:bg-primary/90 transition-colors">
+                <a href="#book" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_18px_50px_rgba(199,210,191,0.22)] hover:bg-primary/90 transition-colors">
                   Book a Consultation
                   <ArrowRight className="w-4 h-4" />
                 </a>

@@ -81,7 +81,7 @@ export function ContactSection({ preselectedService }: { preselectedService?: st
                 <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1.5">Message</label>
                 <textarea id="message" rows={4} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition resize-none" placeholder="Tell us a bit about what brings you here..." />
               </div>
-              <button type="submit" className="w-full bg-primary text-white font-semibold py-3.5 rounded-lg hover:bg-primary/90 transition-colors text-sm">
+              <button type="submit" className="w-full bg-primary text-foreground font-semibold py-3.5 rounded-lg hover:bg-primary/90 transition-colors text-sm">
                 Send Message
               </button>
               <p className="text-xs text-gray-400 text-center">All inquiries are confidential and HIPAA-secure.</p>

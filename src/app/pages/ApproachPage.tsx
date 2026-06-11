@@ -63,9 +63,9 @@ export function ApproachPage() {
             </div>
             <div className="grid sm:grid-cols-2 gap-5">
               {approachPrinciples.map((item, index) => (
-                <div key={item.title} className={`rounded-[1.75rem] border p-6 ${index === 1 ? 'border-primary/15 bg-primary text-white' : 'border-stone-200 bg-stone-50'}`}>
+                <div key={item.title} className={`rounded-[1.75rem] border p-6 ${index === 1 ? 'border-primary/15 bg-primary text-foreground' : 'border-stone-200 bg-stone-50'}`}>
                   <h3 className="font-serif text-2xl mb-3">{item.title}</h3>
-                  <p className={`text-sm leading-relaxed ${index === 1 ? 'text-white/80' : 'text-gray-600'}`}>{item.description}</p>
+                  <p className={`text-sm leading-relaxed ${index === 1 ? 'text-foreground/75' : 'text-gray-600'}`}>{item.description}</p>
                 </div>
               ))}
             </div>
@@ -123,7 +123,7 @@ export function ApproachPage() {
                 'We adjust the plan when life changes or goals become clearer.',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3 text-gray-700">
-                  <div className="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-primary text-foreground text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
                   <p>{item}</p>
                 </div>
               ))}

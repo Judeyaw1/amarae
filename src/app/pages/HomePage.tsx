@@ -42,7 +42,7 @@ export function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-[linear-gradient(135deg,#f5efe6_0%,#fcfaf7_38%,#edf4f1_100%)]">
-        <div className="absolute inset-x-0 top-0 h-32 bg-[radial-gradient(circle_at_top_left,rgba(91,143,184,0.18),transparent_55%)]" />
+        <div className="absolute inset-x-0 top-0 h-32 bg-[radial-gradient(circle_at_top_left,rgba(199,210,191,0.18),transparent_55%)]" />
         <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-primary/8 blur-3xl" />
         <div className="max-w-7xl mx-auto px-6 py-14 lg:py-20">
           <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
@@ -60,7 +60,7 @@ export function HomePage() {
               </p>
 
               <div className="flex flex-wrap gap-3 mb-10">
-                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_rgba(91,143,184,0.22)] hover:bg-primary/90 transition-colors">
+                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_18px_50px_rgba(199,210,191,0.22)] hover:bg-primary/90 transition-colors">
                   Schedule a Free Consult
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -166,11 +166,11 @@ export function HomePage() {
                 </span>
               </Link>
 
-              <Link to="/approach" className="group rounded-[2rem] bg-primary p-7 text-white hover:shadow-md transition-all">
-                <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/70 mb-4">Page two</div>
+              <Link to="/approach" className="group rounded-[2rem] bg-primary p-7 text-foreground hover:shadow-md transition-all">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-foreground/70 mb-4">Page two</div>
                 <h3 className="font-serif text-3xl mb-3">Our Approach</h3>
-                <p className="text-sm text-white/75 leading-relaxed mb-6">See how warmth, clinical structure, and evidence-based treatment come together in each stage of care.</p>
-                <span className="inline-flex items-center gap-2 text-sm font-semibold text-white">
+                <p className="text-sm text-foreground/75 leading-relaxed mb-6">See how warmth, clinical structure, and evidence-based treatment come together in each stage of care.</p>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-foreground">
                   Open approach <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
@@ -243,7 +243,7 @@ export function HomePage() {
                   key={t.author}
                   className={`rounded-[2rem] p-7 ${
                     index === 1
-                      ? 'bg-primary text-white'
+                      ? 'bg-primary text-foreground'
                       : 'border border-stone-200 bg-stone-50 text-gray-900'
                   }`}
                 >
@@ -252,11 +252,11 @@ export function HomePage() {
                       <Star key={s} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <blockquote className={`text-sm leading-relaxed mb-6 ${index === 1 ? 'text-white/85' : 'text-gray-600'}`}>
+                  <blockquote className={`text-sm leading-relaxed mb-6 ${index === 1 ? 'text-foreground/80' : 'text-gray-600'}`}>
                     "{t.quote}"
                   </blockquote>
                   <div className="font-semibold text-sm">{t.author}</div>
-                  <div className={`text-xs uppercase tracking-[0.18em] mt-2 ${index === 1 ? 'text-white/60' : 'text-gray-500'}`}>{t.role}</div>
+                  <div className={`text-xs uppercase tracking-[0.18em] mt-2 ${index === 1 ? 'text-foreground/60' : 'text-gray-500'}`}>{t.role}</div>
                 </div>
               ))}
             </div>

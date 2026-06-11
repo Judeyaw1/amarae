@@ -117,7 +117,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               <button className="p-2 text-gray-400 hover:text-primary transition-colors" type="button">
                 <Search className="w-4.5 h-4.5" />
               </button>
-              <Link to="/consultation" className="bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-primary/90 transition-colors">
+              <Link to="/consultation" className="bg-primary text-foreground text-sm font-semibold px-5 py-2.5 rounded hover:bg-primary/90 transition-colors">
                 Book Free Consultation
               </Link>
             </div>
@@ -154,7 +154,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                   )}
                 </div>
               ))}
-              <Link to="/consultation" className="block mt-2 bg-primary text-white text-center text-sm font-semibold px-4 py-2.5 rounded hover:bg-primary/90 transition-colors">
+              <Link to="/consultation" className="block mt-2 bg-primary text-foreground text-center text-sm font-semibold px-4 py-2.5 rounded hover:bg-primary/90 transition-colors">
                 Book Free Consultation
               </Link>
             </div>

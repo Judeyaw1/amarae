@@ -37,9 +37,9 @@ export function AboutPage() {
               description: 'More clarity, better language for their experience, and a stronger sense of movement between sessions.',
             },
           ].map((item, index) => (
-            <div key={item.title} className={`rounded-[1.75rem] border p-6 ${index === 1 ? 'border-primary/15 bg-primary text-white' : 'border-stone-200 bg-stone-50'}`}>
+            <div key={item.title} className={`rounded-[1.75rem] border p-6 ${index === 1 ? 'border-primary/15 bg-primary text-foreground' : 'border-stone-200 bg-stone-50'}`}>
               <h2 className="font-serif text-2xl mb-3">{item.title}</h2>
-              <p className={`text-sm leading-relaxed ${index === 1 ? 'text-white/80' : 'text-gray-600'}`}>{item.description}</p>
+              <p className={`text-sm leading-relaxed ${index === 1 ? 'text-foreground/75' : 'text-gray-600'}`}>{item.description}</p>
             </div>
           ))}
         </div>

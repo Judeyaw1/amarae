@@ -33,7 +33,7 @@ function ServiceCarousel() {
               <Link
                 to={`/services/${s.slug}`}
                 className={`group flex flex-col overflow-hidden rounded-[2rem] border transition-all hover:-translate-y-1 hover:shadow-xl h-full ${
-                  index === 1 || index === 3 ? 'border-primary/20 bg-primary text-white' : 'border-stone-200 bg-stone-50'
+                  index === 1 || index === 3 ? 'border-primary/20 bg-primary text-foreground' : 'border-stone-200 bg-stone-50'
                 }`}
               >
                 <div className="relative aspect-[16/10] overflow-hidden flex-shrink-0">
@@ -51,17 +51,17 @@ function ServiceCarousel() {
                 </div>
                 <div className="p-7 flex flex-col flex-1">
                   <h2 className="font-serif text-3xl mb-3">{s.title}</h2>
-                  <p className={`text-sm leading-relaxed mb-5 flex-1 ${index === 1 || index === 3 ? 'text-white/75' : 'text-gray-600'}`}>
+                  <p className={`text-sm leading-relaxed mb-5 flex-1 ${index === 1 || index === 3 ? 'text-foreground/75' : 'text-gray-600'}`}>
                     {s.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {s.topics.map((t) => (
-                      <span key={t} className={`rounded-full px-3 py-1 text-xs ${index === 1 || index === 3 ? 'border border-white/20 text-white/85' : 'border border-stone-200 bg-white text-gray-600'}`}>
+                      <span key={t} className={`rounded-full px-3 py-1 text-xs ${index === 1 || index === 3 ? 'border border-foreground/20 text-foreground/85' : 'border border-stone-200 bg-white text-gray-600'}`}>
                         {t}
                       </span>
                     ))}
                   </div>
-                  <span className={`inline-flex items-center gap-2 text-sm font-semibold ${index === 1 || index === 3 ? 'text-white' : 'text-primary'}`}>
+                  <span className={`inline-flex items-center gap-2 text-sm font-semibold ${index === 1 || index === 3 ? 'text-foreground' : 'text-primary'}`}>
                     Learn more & book <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
@@ -104,7 +104,7 @@ function ServiceCarousel() {
             onClick={scrollNext}
             type="button"
             aria-label="Next"
-            className="w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary/90 transition-colors shadow-sm"
+            className="w-11 h-11 rounded-full bg-primary text-foreground flex items-center justify-center hover:bg-primary/90 transition-colors shadow-sm"
           >
             <ArrowRight className="w-4 h-4" />
           </button>
@@ -134,7 +134,7 @@ export function ServicesPage() {
                 Individual depth work, couples counseling, family therapy, life coaching, and workshops — all matched with the pace, format, and clinician that fits best.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_rgba(91,143,184,0.22)] hover:bg-primary/90 transition-colors">
+                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_18px_50px_rgba(199,210,191,0.22)] hover:bg-primary/90 transition-colors">
                   Find Your Fit
                   <ArrowRight className="w-4 h-4" />
                 </Link>

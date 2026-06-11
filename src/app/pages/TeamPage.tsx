@@ -47,7 +47,7 @@ export function TeamPage() {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {therapists.map((t, index) => (
-              <div key={t.name} className={`group rounded-[2rem] overflow-hidden ${index === 1 ? 'bg-primary text-white' : 'bg-stone-50 border border-stone-200'}`}>
+              <div key={t.name} className={`group rounded-[2rem] overflow-hidden ${index === 1 ? 'bg-primary text-foreground' : 'bg-stone-50 border border-stone-200'}`}>
                 <div className="aspect-[3/4] overflow-hidden">
                   <img src={t.img} alt={t.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
@@ -56,11 +56,11 @@ export function TeamPage() {
                     <h2 className="font-serif text-2xl">{t.name}</h2>
                     <span className={`text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 mt-0.5 ${index === 1 ? 'bg-white text-primary' : 'bg-primary/10 text-primary'}`}>{t.specialty}</span>
                   </div>
-                  <p className={`text-sm font-medium mb-3 ${index === 1 ? 'text-white/85' : 'text-primary'}`}>{t.credentials}</p>
-                  <p className={`text-sm leading-relaxed mb-4 ${index === 1 ? 'text-white/75' : 'text-gray-600'}`}>{t.bio}</p>
+                  <p className={`text-sm font-medium mb-3 ${index === 1 ? 'text-foreground/85' : 'text-primary'}`}>{t.credentials}</p>
+                  <p className={`text-sm leading-relaxed mb-4 ${index === 1 ? 'text-foreground/75' : 'text-gray-600'}`}>{t.bio}</p>
                   <div className="flex flex-wrap gap-2">
                     {t.modalities.map((m) => (
-                      <span key={m} className={`text-xs px-2.5 py-1 rounded-full ${index === 1 ? 'border border-white/20 text-white/85' : 'border border-stone-200 bg-white text-gray-600'}`}>{m}</span>
+                      <span key={m} className={`text-xs px-2.5 py-1 rounded-full ${index === 1 ? 'border border-foreground/20 text-foreground/85' : 'border border-stone-200 bg-white text-gray-600'}`}>{m}</span>
                     ))}
                   </div>
                 </div>
