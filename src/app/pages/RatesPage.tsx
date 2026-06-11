@@ -142,7 +142,7 @@ export function RatesPage() {
             <p className="text-sm text-foreground/75 leading-relaxed mb-6">
               Reach out for a free consultation and we'll walk through your coverage, expected fees, and payment options together.
             </p>
-            <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_18px_50px_rgba(161,201,231,0.35)] hover:bg-accent/90 transition-colors">
+            <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_18px_50px_rgba(199,210,191,0.35)] hover:bg-accent/90 transition-colors">
               Book a Free Consultation
             </Link>
           </div>

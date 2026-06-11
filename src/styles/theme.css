@@ -17,7 +17,7 @@
   --secondary-foreground: #1a1a1a;
   --muted: #f4f1ec;
   --muted-foreground: #6b6b6b;
-  --accent: #a1c9e7;
+  --accent: #c7d2bf;
   --accent-foreground: #1a1a1a;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
@@ -29,7 +29,7 @@
   --font-weight-normal: 400;
   --ring: #c7d2bf;
   --chart-1: #c7d2bf;
-  --chart-2: #a1c9e7;
+  --chart-2: #c7d2bf;
   --chart-3: #c8d7d0;
   --chart-4: #b8aa94;
   --chart-5: #e1d4c5;
@@ -57,7 +57,7 @@
   --secondary-foreground: #fdfcfb;
   --muted: #2d2d2d;
   --muted-foreground: #a0a0a0;
-  --accent: #a1c9e7;
+  --accent: #c7d2bf;
   --accent-foreground: #1a1a1a;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
@@ -67,7 +67,7 @@
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   --chart-1: #c7d2bf;
-  --chart-2: #a1c9e7;
+  --chart-2: #c7d2bf;
   --chart-3: #e1d4c5;
   --chart-4: #b8aa94;
   --chart-5: #c7d2bf;

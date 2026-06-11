@@ -60,7 +60,7 @@ export function HomePage() {
               </p>
 
               <div className="flex flex-wrap gap-3 mb-10">
-                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_18px_50px_rgba(161,201,231,0.35)] hover:bg-accent/90 transition-colors">
+                <Link to="/consultation" className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_18px_50px_rgba(199,210,191,0.35)] hover:bg-accent/90 transition-colors">
                   Schedule a Free Consult
                   <ArrowRight className="w-4 h-4" />
                 </Link>
