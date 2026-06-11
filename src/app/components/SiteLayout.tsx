@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 import { useEffect, useState } from 'react';
-import { Mail, MapPin, Menu, Phone, Search, X } from 'lucide-react';
+import { ChevronDown, Mail, MapPin, Menu, Phone, Search, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router';
-import { mainNavItems } from '../data/siteContent';
+import { mainNavItems, services } from '../data/siteContent';
 
 function HeaderLink({ to, label }: { to: string; label: string }) {
   return (
@@ -16,6 +16,47 @@ function HeaderLink({ to, label }: { to: string; label: string }) {
     >
       {label}
     </NavLink>
+  );
+}
+
+function ServicesNavItem({ to, label }: { to: string; label: string }) {
+  const location = useLocation();
+  const isActive = location.pathname.startsWith(to);
+
+  return (
+    <div className="relative group">
+      <NavLink
+        to={to}
+        className={`flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+          isActive ? 'text-primary bg-primary/5' : 'text-gray-600 hover:text-primary hover:bg-gray-50'
+        }`}
+      >
+        {label}
+        <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" />
+      </NavLink>
+
+      <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-64 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150 z-50">
+        <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
+          {services.map((service) => (
+            <Link
+              key={service.slug}
+              to={`/services/${service.slug}`}
+              className="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors"
+            >
+              {service.title}
+            </Link>
+          ))}
+          <div className="border-t border-gray-100 mt-1 pt-1">
+            <Link
+              to="/services"
+              className="block px-4 py-2.5 text-sm font-medium text-primary hover:bg-gray-50 transition-colors"
+            >
+              View All Services
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -67,9 +108,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </Link>
 
             <nav className="hidden md:flex items-center gap-1">
-              {mainNavItems.map((item) => (
-                <HeaderLink key={item.label} to={item.to} label={item.label} />
-              ))}
+              {mainNavItems.map((item) =>
+                item.label === 'Services' ? (
+                  <ServicesNavItem key={item.label} to={item.to} label={item.label} />
+                ) : (
+                  <HeaderLink key={item.label} to={item.to} label={item.label} />
+                ),
+              )}
             </nav>
 
             <div className="hidden md:flex items-center gap-3">
@@ -91,13 +136,27 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <div className="md:hidden border-t border-gray-100 bg-white">
             <div className="px-4 py-3 space-y-1">
               {mainNavItems.map((item) => (
-                <Link
-                  key={item.label}
-                  to={item.to}
-                  className="block px-3 py-2.5 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
-                >
-                  {item.label}
-                </Link>
+                <div key={item.label}>
+                  <Link
+                    to={item.to}
+                    className="block px-3 py-2.5 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                  {item.label === 'Services' && (
+                    <div className="pl-3 border-l border-gray-100 ml-3 space-y-1 mb-1">
+                      {services.map((service) => (
+                        <Link
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="block px-3 py-2 text-sm text-gray-500 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                        >
+                          {service.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
               <Link to="/consultation" className="block mt-2 bg-primary text-white text-center text-sm font-semibold px-4 py-2.5 rounded hover:bg-primary/90 transition-colors">
                 Book Free Consultation
