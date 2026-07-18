@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowRight, ChevronDown, ChevronRight, Star } from 'lucide-react';
 import { Link } from 'react-router';
 import { NewsletterSignup } from '../components/NewsletterSignup';
 import { SectionEyebrow } from '../components/SectionEyebrow';
-import heroImage from '../assets/home-hero.jpg';
+import heroImage1 from '../assets/home-slide-1.avif';
+import heroImage2 from '../assets/home-slide-2.avif';
+import heroImage3 from '../assets/home-slide-3.avif';
+import heroImage4 from '../assets/home-slide-4.avif';
 import { faqs, stats, testimonials } from '../data/siteContent';
 
 const practicePages = [
@@ -37,8 +40,24 @@ const practicePages = [
   },
 ];
 
+const heroSlides = [
+  heroImage1,
+  heroImage2,
+  heroImage3,
+  heroImage4,
+];
+
 export function HomePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [currentHeroSlide, setCurrentHeroSlide] = useState(0);
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setCurrentHeroSlide((current) => (current + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
 
   return (
     <>
@@ -87,8 +106,35 @@ export function HomePage() {
             <div className="relative min-h-[300px] sm:min-h-[420px] lg:min-h-[540px]">
               <div className="absolute inset-0 rounded-[2.5rem] bg-gray-900" />
               <div className="absolute inset-4 overflow-hidden rounded-[2rem]">
-                <img src={heroImage} alt="Therapy session" className="w-full h-full object-cover object-center" />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,0.02)_0%,rgba(17,24,39,0.52)_100%)]" />
+                <div
+                  className="flex h-full w-full transition-transform duration-700 ease-out"
+                  style={{ transform: `translateX(-${currentHeroSlide * 100}%)` }}
+                >
+                  {heroSlides.map((slide, index) => (
+                    <div key={slide} className="relative h-full w-full shrink-0 overflow-hidden">
+                      <img
+                        src={slide}
+                        alt={`Therapy session ${index + 1}`}
+                        className="absolute inset-0 h-full w-full object-cover object-center"
+                      />
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,0.02)_0%,rgba(17,24,39,0.52)_100%)]" />
+                    </div>
+                  ))}
+                </div>
+
+                <div className="absolute bottom-5 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full bg-white/80 px-3 py-2 shadow-lg backdrop-blur-sm">
+                  {heroSlides.map((slide, index) => (
+                    <button
+                      key={slide}
+                      type="button"
+                      aria-label={`Go to hero image ${index + 1}`}
+                      onClick={() => setCurrentHeroSlide(index)}
+                      className={`h-2.5 rounded-full transition-all ${
+                        index === currentHeroSlide ? 'w-8 bg-primary' : 'w-2.5 bg-gray-300 hover:bg-gray-400'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
