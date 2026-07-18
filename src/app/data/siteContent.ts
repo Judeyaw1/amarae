@@ -1,6 +1,7 @@
 import individualTherapyImg from '../assets/individual-therapy.avif';
 import familyTherapyImg from '../assets/family-therapy.avif';
 import lifeCoachingImg from '../assets/life-coaching.avif';
+import couplesTherapyImg from '../assets/couples-therapy.jpg';
 
 export const HERO_IMG = 'https://images.unsplash.com/photo-1668915064380-258413131280?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxwc3ljaG90aGVyYXB5JTIwYmxhY2t8ZW58MHx8MHx8fDA%3D';
 export const TEAM_1 = 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80';
@@ -77,7 +78,7 @@ export const services = [
     tag: 'Couples',
     title: 'Couples Counseling',
     description: 'Strengthen communication, rebuild trust, and rediscover connection with a therapist specialized in relational healing.',
-    img: CARD_2,
+    img: couplesTherapyImg,
     topics: ['Communication Skills', 'Conflict Resolution', 'Trust & Intimacy', 'Pre-marital'],
     fullDescription:
       'Couples counseling helps partners understand each other more deeply, interrupt unhelpful cycles, and rebuild the secure connection that makes a relationship thrive. Whether you are navigating a specific crisis or simply want to strengthen an already good partnership, our Gottman- and EFT-trained clinicians guide the process with warmth and clarity.',

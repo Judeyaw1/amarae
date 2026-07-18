@@ -3,7 +3,7 @@ import { ArrowRight, ChevronDown, ChevronRight, Star } from 'lucide-react';
 import { Link } from 'react-router';
 import { NewsletterSignup } from '../components/NewsletterSignup';
 import { SectionEyebrow } from '../components/SectionEyebrow';
-import heroImage from '../assets/home-hero.avif';
+import heroImage from '../assets/home-hero.jpg';
 import { faqs, stats, testimonials } from '../data/siteContent';
 
 const practicePages = [
