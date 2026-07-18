@@ -1,5 +1,6 @@
 import { SectionEyebrow } from '../components/SectionEyebrow';
-import { HERO_IMG, TEAM_1 } from '../data/siteContent';
+import aboutWhatMattersImg from '../assets/about-what-matters.avif';
+import founderPortrait from '../assets/founder-portrait.png';
 
 export function AboutPage() {
   return (
@@ -59,7 +60,7 @@ export function AboutPage() {
             </p>
           </div>
           <div className="rounded-[2.5rem] overflow-hidden shadow-sm">
-            <img src={HERO_IMG} alt="About ARK Counseling Connection" className="w-full h-full object-cover aspect-[16/11]" />
+            <img src={aboutWhatMattersImg} alt="About ARK Counseling Connection" className="w-full h-full object-cover aspect-[16/11]" />
           </div>
         </div>
       </section>
@@ -69,14 +70,14 @@ export function AboutPage() {
           <SectionEyebrow>Meet the founder</SectionEyebrow>
           <div className="grid lg:grid-cols-[auto_1fr] gap-12 items-start mt-8">
             <div className="rounded-[2rem] overflow-hidden shadow-sm w-48 sm:w-64 flex-shrink-0 mx-auto lg:mx-0">
-              <img src={TEAM_1} alt="Founder" className="w-full h-full object-cover aspect-[3/4]" />
+              <img src={founderPortrait} alt="Founder" className="w-full h-full object-cover aspect-[3/4]" />
             </div>
             <div className="flex flex-col justify-center">
               <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gray-900 leading-[1.02] mb-2">
                 R.A.Kwadu
               </h2>
               <p className="text-primary font-semibold mb-6">MS, NCC, LCPC</p>
-              <div className="space-y-4 text-gray-600 leading-relaxed max-w-2xl">
+              <div className="space-y-4 text-gray-600 leading-relaxed max-w-2xl text-justify">
                 <p>
                   Ama is a compassionate and culturally responsive therapist dedicated to helping individuals navigate life's challenges and achieve meaningful, sustainable growth. With years of experience in the mental health field, she has worked across university counseling, residential treatment, and private practice settings, providing care to individuals from diverse backgrounds, cultures, and stages of life. Her experience ranges from supporting college students and young adults through life transitions to working with individuals experiencing severe and persistent mental illness, as well as high-functioning children to professionals managing anxiety, depression, trauma, relationship concerns, and stress.
                 </p>
