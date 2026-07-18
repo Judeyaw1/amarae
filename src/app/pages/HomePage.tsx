@@ -87,30 +87,8 @@ export function HomePage() {
             <div className="relative min-h-[300px] sm:min-h-[420px] lg:min-h-[540px]">
               <div className="absolute inset-0 rounded-[2.5rem] bg-gray-900" />
               <div className="absolute inset-4 overflow-hidden rounded-[2rem]">
-                <img src={heroImage} alt="Therapy session" className="w-full h-full object-cover" />
+                <img src={heroImage} alt="Therapy session" className="w-full h-full object-cover object-center" />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,0.02)_0%,rgba(17,24,39,0.52)_100%)]" />
-              </div>
-
-              <div className="hidden lg:block absolute left-6 top-6 rounded-3xl bg-white/92 p-5 shadow-xl backdrop-blur-sm max-w-[240px]">
-                <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary mb-3">Why people choose us</div>
-                <div className="space-y-3 text-sm text-gray-600">
-                  <div>Clear next steps after consultation</div>
-                  <div>Warm, research-backed treatment</div>
-                  <div>Dedicated pages for every major question</div>
-                </div>
-              </div>
-
-              <div className="hidden sm:block absolute right-0 bottom-10 w-[290px] rounded-[2rem] bg-[#f7f3ee] p-6 shadow-2xl">
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-base leading-relaxed text-gray-700 mb-4">
-                  "The practice felt calm and organized before I even made the call. That mattered."
-                </p>
-                <div className="text-sm font-semibold text-gray-900">M. Torres</div>
-                <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mt-1">Individual therapy client</div>
               </div>
             </div>
           </div>
