@@ -3,7 +3,8 @@ import { ArrowRight, ChevronDown, ChevronRight, Star } from 'lucide-react';
 import { Link } from 'react-router';
 import { NewsletterSignup } from '../components/NewsletterSignup';
 import { SectionEyebrow } from '../components/SectionEyebrow';
-import { HERO_IMG, faqs, stats, testimonials } from '../data/siteContent';
+import heroImage from '../assets/home-hero.avif';
+import { faqs, stats, testimonials } from '../data/siteContent';
 
 const practicePages = [
   {
@@ -86,7 +87,7 @@ export function HomePage() {
             <div className="relative min-h-[300px] sm:min-h-[420px] lg:min-h-[540px]">
               <div className="absolute inset-0 rounded-[2.5rem] bg-gray-900" />
               <div className="absolute inset-4 overflow-hidden rounded-[2rem]">
-                <img src={HERO_IMG} alt="Therapy session" className="w-full h-full object-cover" />
+                <img src={heroImage} alt="Therapy session" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,0.02)_0%,rgba(17,24,39,0.52)_100%)]" />
               </div>
 

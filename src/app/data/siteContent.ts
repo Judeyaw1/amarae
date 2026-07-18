@@ -1,3 +1,7 @@
+import individualTherapyImg from '../assets/individual-therapy.avif';
+import familyTherapyImg from '../assets/family-therapy.avif';
+import lifeCoachingImg from '../assets/life-coaching.avif';
+
 export const HERO_IMG = 'https://images.unsplash.com/photo-1668915064380-258413131280?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxwc3ljaG90aGVyYXB5JTIwYmxhY2t8ZW58MHx8MHx8fDA%3D';
 export const TEAM_1 = 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80';
 export const TEAM_2 = 'https://images.unsplash.com/photo-1565884280295-98eb83e41c65?auto=format&fit=crop&w=400&q=80';
@@ -23,7 +27,7 @@ export const services = [
     tag: 'Individual',
     title: 'Individual Therapy',
     description: 'One-on-one sessions tailored to your unique needs, exploring patterns, building resilience, and creating lasting change.',
-    img: CARD_1,
+    img: individualTherapyImg,
     topics: ['Anxiety & Depression', 'Trauma Recovery', 'Life Transitions', 'Grief & Loss'],
     fullDescription:
       'Individual therapy provides a confidential and collaborative space to explore personal challenges, increase self-awareness, and develop healthier ways of coping and relating. Treatment may focus on concerns such as mood disorders, anxiety disorders, stress, trauma, self-esteem, and personal growth. Together, we work toward meaningful change using evidence-based and client-centered approaches tailored to your goals. For clients who desire it, faith and spirituality may also be thoughtfully integrated into the therapeutic process as a source of support, healing, meaning, and personal growth while honoring each individual\'s values and beliefs.',
@@ -48,7 +52,7 @@ export const services = [
     tag: 'Family',
     title: 'Family Therapy',
     description: 'Navigate family dynamics, heal generational patterns, and build healthier relationships across every stage of life.',
-    img: CARD_3,
+    img: familyTherapyImg,
     topics: ['Parent-Child Relations', 'Blended Families', 'Adolescent Issues', 'Family Conflict'],
     fullDescription:
       'Family therapy supports families in improving communication, strengthening relationships, and navigating challenges together. Sessions focus on understanding patterns within the family system, addressing conflict, increasing connection, and developing healthier ways of interacting. Family therapy may be helpful during periods of transition, behavioral concerns, parenting challenges, or ongoing relational stress.',
@@ -124,7 +128,7 @@ export const services = [
     tag: 'Coaching',
     title: 'Life Coaching',
     description: 'Goal-oriented coaching to help you clarify direction, break through blocks, and build a life that genuinely reflects your values.',
-    img: CARD_4,
+    img: lifeCoachingImg,
     topics: ['Career Transitions', 'Goal Setting', 'Confidence & Mindset', 'Work-Life Balance'],
     fullDescription:
       'Life coaching is focused, future-oriented work. Unlike therapy, which explores past patterns and emotional healing, coaching helps you define what you want, identify what is getting in the way, and build momentum toward it. Sessions are practical, energizing, and structured around your goals.',
